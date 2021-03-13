@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../graficos/.idea/graficos.iml" filepath="$PROJECT_DIR$/../graficos/.idea/graficos.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/twitter_trends_analize.iml" filepath="$PROJECT_DIR$/.idea/twitter_trends_analize.iml" />
     </modules>
   </component>

@@ -17,11 +17,6 @@ combined_df['position'] = np.where(combined_df['pos'] > combined_df['neg'], 1, -
 combined_df['strategy'] = combined_df['position'].shift(1) * combined_df['returns']
 combined_df.dropna(inplace=True)
 
-
-plt.bar(np.exp(combined_df[['returns', 'strategy']].sum()))
-
-plt.show()
-plt.close('all')
-
-
-
+# print(_pfe)
+combined_df.to_csv('combined.csv')
+np.exp(combined_df[['returns', 'strategy']].sum())
