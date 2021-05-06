@@ -6,7 +6,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import matplotlib.pyplot as plt
 
 analyzer = SentimentIntensityAnalyzer()
-df = pd.read_csv('pfe_tweets_result.csv')
+df = pd.read_csv('../graficos/pfe_tweets_result.csv')
 df = df.set_index('date')
 
 df['compound'] = [analyzer.polarity_scores(x)['compound'] for x in df['tweet']]

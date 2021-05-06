@@ -9,12 +9,12 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 # Set maximum tweets to pull
 maxTweets = 20000
 # Set what keywords you want your twitter scraper to pull
-keyword = 'Pfizer'
+keyword = 'pfizer'
 # Open/create a file to append data to
-csvFile = open('pfe_tweets_result.csv', 'a', newline='', encoding='utf8')
+csvFile = open('../graficos/pfe_tweets_result.csv', 'a', newline='', encoding='utf8')
 # Use csv writer
 csvWriter = csv.writer(csvFile)
-csvWriter.writerow(['id', 'Date', 'tweet', ])
+csvWriter.writerow(['id', 'date', 'tweet', ])
 
 # Write tweets into the csv file
 for i, tweet in enumerate(sntwitter.TwitterSearchScraper(
